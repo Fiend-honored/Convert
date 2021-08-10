@@ -14,6 +14,7 @@ namespace Convert
 
         public void CheckEnterKey()
         {
+            Console.Write("Введите ключ для получения нового уровня подписки: ");
             string enterKey = null;
             enterKey = Console.ReadLine();
 
