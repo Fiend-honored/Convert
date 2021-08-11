@@ -6,7 +6,7 @@ namespace Convert
 {
     class ExpertDocumentWorker : ProDocumentWorker
     {
-        public new void SaveDocument()
+        public override void SaveDocument()
         {
             Console.WriteLine("Документ сохранен в новом формате");
         }

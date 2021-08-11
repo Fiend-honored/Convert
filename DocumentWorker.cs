@@ -11,13 +11,13 @@ namespace Convert
             Console.WriteLine("Документ открыт"); ;
         }
 
-       public void EditDocument()
+       public virtual void EditDocument()
         {
             Console.WriteLine("Редактирование документа доступно в версии Про");
             
         }
 
-       public void SaveDocument()
+       public virtual void SaveDocument()
         {
             Console.WriteLine("Сохранение документа доступно в версии Про");
         }
