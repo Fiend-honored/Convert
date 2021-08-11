@@ -8,7 +8,9 @@ namespace Convert
     {
         public override void SaveDocument()
         {
-            Console.WriteLine("Документ сохранен в новом формате");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Документ сохранен в новом формате \n");
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
     }
 }

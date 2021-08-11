@@ -8,18 +8,24 @@ namespace Convert
     {
        public void OpenDocument()
         {
-            Console.WriteLine("Документ открыт"); ;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Документ открыт \n"); 
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
 
        public virtual void EditDocument()
         {
-            Console.WriteLine("Редактирование документа доступно в версии Про");
-            
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Редактирование документа доступно в версии Про \n");
+            Console.ForegroundColor = ConsoleColor.Gray;
+
         }
 
        public virtual void SaveDocument()
         {
-            Console.WriteLine("Сохранение документа доступно в версии Про");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Сохранение документа доступно в версии Про \n");
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
 
         public string Choice()

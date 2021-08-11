@@ -8,12 +8,16 @@ namespace Convert
     {
         public override void EditDocument()
         {
-            Console.WriteLine("Документ отредактирован");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Документ отредактирован \n");
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
 
         public override void SaveDocument()
         {
-            Console.WriteLine("Документ сохранен в старом формате, сохранение в остальных форматах доступно в версии Эксперт");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Документ сохранен в старом формате, сохранение в остальных форматах доступно в версии Эксперт \n");
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
 
 

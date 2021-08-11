@@ -14,6 +14,7 @@ namespace Convert
 
         public void CheckEnterKey()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Введите ключ для получения нового уровня подписки: ");
             string enterKey = null;
             enterKey = Console.ReadLine();
@@ -23,19 +24,25 @@ namespace Convert
                 if (enterKey == proKey)
                 {
                     statusKey = "pro";
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("Ключ корректный, уровень вашей подписки PRO");
+                    Console.ForegroundColor = ConsoleColor.Gray;
                     break;
                 }
                 else if (enterKey == exKey)
                 {
                     statusKey = "expert";
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("Ключ корректный, уровень вашей подписки EXPERT");
+                    Console.ForegroundColor = ConsoleColor.Gray;
                     break;
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Вы ввели некорректный ключ\n" +
                         "Хотите повторить попытку? Y - да, N - нет");
+                    Console.ForegroundColor = ConsoleColor.Gray;
                     string secondTry = Console.ReadLine();
                     if(secondTry == "Y" || secondTry == "y")
                     {
