@@ -6,14 +6,14 @@ namespace Convert
 {
     class ProDocumentWorker : DocumentWorker
     {
-        public override string EditDocument()
+        public new void EditDocument()
         {
-            return "Документ отредактирован";
+            Console.WriteLine("Документ отредактирован");
         }
 
-        public override string SaveDocument()
+        public new void SaveDocument()
         {
-            return "Документ сохранен в старом формате, сохранение в остальных форматах доступно в версии Эксперт";
+            Console.WriteLine("Документ сохранен в старом формате, сохранение в остальных форматах доступно в версии Эксперт");
         }
     }
 }
